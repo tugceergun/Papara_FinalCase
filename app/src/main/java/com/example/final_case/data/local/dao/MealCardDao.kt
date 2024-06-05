@@ -11,7 +11,7 @@ interface MealCardDao {
     fun getAllMealCards(): Flow<List<FoodCard>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun addMealCardToFavorites(drinkCard: FoodCard)
+    suspend fun addMealCardToFavorites(mealCard: FoodCard)
 
     @Query("DELETE FROM food_cards WHERE id = :id")
     suspend fun removeMealCardFromFavorites(id: String)
