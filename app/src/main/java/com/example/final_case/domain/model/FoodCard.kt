@@ -19,7 +19,7 @@ data class FoodCard(
     companion object {
         fun mock() = FoodCard(
             "1",
-            "Cocktail",
+            "Food",
             "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg/preview",
             "https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg"
         )
